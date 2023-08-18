@@ -6,7 +6,8 @@ const skills = [
 
 module.exports = {
     getAll,
-    getOne
+    getOne,
+    create
 }
 
 function getAll() {
@@ -16,4 +17,10 @@ function getAll() {
 function getOne(id) {
     id = parseInt(id);
     return skills.find(skill => skill.id === id);
+}
+
+function create(skill) {
+    id= Date.now() % 100000000;
+    skill.level = 'beginner';
+    skills.push(skill)
 }
