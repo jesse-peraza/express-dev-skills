@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <title>Skill</title>
-</head>
-<body>
-    <a href="/">Home</a>
-    <h3><%= skills.skill %></h3>
-    -
-    <h4>Level: <%= skills.level%></h4>
-  </body>
-</html>
+<%- include('../partials/header') %>
+
+<h3><%= skills.skill %></h3>
+<h4>Level: <%= skills.level%></h4>
+
+<%- include('../partials/footer') %>

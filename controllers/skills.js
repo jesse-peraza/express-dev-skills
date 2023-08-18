@@ -1,9 +1,10 @@
+const Skill = require('../models/skill')
+
 module.exports = {
     index,
     show
 };
 
-const Skill = require('../models/skill')
 
 function index(req, res) {
     res.render('skills/index', {
