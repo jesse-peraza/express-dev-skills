@@ -2,5 +2,12 @@
 
 <h3><%= skills.skill %></h3>
 <h4>Level: <%= skills.level%></h4>
+<form
+    action="/skills/<%= skills.skill %>?_method=DELETE"
+    method="POST"
+    class="delete-form"
+    >
+<button type="submit">Delete</button>
+</form>
 
 <%- include('../partials/footer') %>
